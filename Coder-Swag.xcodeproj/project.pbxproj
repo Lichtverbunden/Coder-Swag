@@ -24,6 +24,7 @@
 		BE7C12521F45D381006F2D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE7C12541F45D381006F2D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE7C125E1F45DC13006F2D19 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		BE7C12611F45E2AD006F2D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = "Coder-Swag/Base.lproj/Category.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 		BE7C125D1F45D3D8006F2D19 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BE7C12601F45E2AD006F2D19 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +195,14 @@
 				BE7C12521F45D381006F2D19 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BE7C12601F45E2AD006F2D19 /* Category.swift */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE7C12611F45E2AD006F2D19 /* Base */,
+			);
+			name = Category.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
