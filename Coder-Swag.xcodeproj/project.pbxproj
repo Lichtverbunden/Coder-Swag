@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE44C62C1F46303E004EDA40 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44C62B1F46303E004EDA40 /* DataService.swift */; };
+		BE44C62E1F46336C004EDA40 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44C62D1F46336C004EDA40 /* Category.swift */; };
 		BE7C12491F45D381006F2D19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7C12481F45D381006F2D19 /* AppDelegate.swift */; };
 		BE7C124B1F45D381006F2D19 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7C124A1F45D381006F2D19 /* MainVC.swift */; };
 		BE7C124E1F45D381006F2D19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7C124C1F45D381006F2D19 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE44C62B1F46303E004EDA40 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		BE44C62D1F46336C004EDA40 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		BE7C12451F45D381006F2D19 /* Coder-Swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coder-Swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7C12481F45D381006F2D19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE7C124A1F45D381006F2D19 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -24,7 +28,6 @@
 		BE7C12521F45D381006F2D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE7C12541F45D381006F2D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE7C125E1F45DC13006F2D19 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
-		BE7C12611F45E2AD006F2D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = "Coder-Swag/Base.lproj/Category.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE44C62A1F463002004EDA40 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BE44C62B1F46303E004EDA40 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		BE7C123C1F45D381006F2D19 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +71,7 @@
 				BE7C125D1F45D3D8006F2D19 /* Model */,
 				BE7C125C1F45D3CD006F2D19 /* Views */,
 				BE7C125B1F45D3C3006F2D19 /* Controller */,
+				BE44C62A1F463002004EDA40 /* Services */,
 				BE7C125A1F45D3B9006F2D19 /* Resources */,
 				BE7C12481F45D381006F2D19 /* AppDelegate.swift */,
 				BE7C12511F45D381006F2D19 /* LaunchScreen.storyboard */,
@@ -96,7 +108,7 @@
 		BE7C125D1F45D3D8006F2D19 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BE7C12601F45E2AD006F2D19 /* Category.swift */,
+				BE44C62D1F46336C004EDA40 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,8 +185,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE7C124B1F45D381006F2D19 /* MainVC.swift in Sources */,
+				BE44C62E1F46336C004EDA40 /* Category.swift in Sources */,
 				BE7C12491F45D381006F2D19 /* AppDelegate.swift in Sources */,
 				BE7C125F1F45DC13006F2D19 /* CategoryCell.swift in Sources */,
+				BE44C62C1F46303E004EDA40 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +209,6 @@
 				BE7C12521F45D381006F2D19 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		BE7C12601F45E2AD006F2D19 /* Category.swift */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE7C12611F45E2AD006F2D19 /* Base */,
-			);
-			name = Category.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

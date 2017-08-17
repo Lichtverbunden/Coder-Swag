@@ -36,25 +36,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fEb-zB-bsT">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fEb-zB-bsT">
                                 <rect key="frame" x="0.0" y="69.666666666666686" width="414" height="602.33333333333326"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="145" id="7Cq-jA-9KV" customClass="CategoryCell" customModule="Coder_Swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="145" id="7Cq-jA-9KV" customClass="CategoryCell" customModule="Coder_Swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Cq-jA-9KV" id="NNr-Su-5ct">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="144.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirts" translatesAutoresizingMaskIntoConstraints="NO" id="ji3-7e-sMN">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="144.66666666666666"/>
+                                                    <rect key="frame" x="0.0" y="3" width="414" height="138.66666666666666"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHIRTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0k-4G-4r0">
-                                                    <rect key="frame" x="129" y="58.666666666666671" width="156" height="28.000000000000014"/>
+                                                    <rect key="frame" x="132" y="58.666666666666671" width="150" height="28.000000000000014"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="4mb-e5-re1"/>
                                                         <constraint firstAttribute="height" constant="28" id="EBW-yB-aPW"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="Ksq-Tc-j2C"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -62,11 +62,11 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ji3-7e-sMN" firstAttribute="top" secondItem="NNr-Su-5ct" secondAttribute="top" id="1Ec-60-Azw"/>
-                                                <constraint firstAttribute="bottom" secondItem="ji3-7e-sMN" secondAttribute="bottom" id="4Z6-vu-Oey"/>
+                                                <constraint firstItem="ji3-7e-sMN" firstAttribute="top" secondItem="NNr-Su-5ct" secondAttribute="top" constant="3" id="7Xv-nC-31L"/>
                                                 <constraint firstItem="f0k-4G-4r0" firstAttribute="centerX" secondItem="NNr-Su-5ct" secondAttribute="centerX" id="GMH-kg-yFj"/>
                                                 <constraint firstItem="f0k-4G-4r0" firstAttribute="centerY" secondItem="NNr-Su-5ct" secondAttribute="centerY" id="Kgr-EL-pGX"/>
                                                 <constraint firstAttribute="trailing" secondItem="ji3-7e-sMN" secondAttribute="trailing" id="ekY-i1-BVM"/>
+                                                <constraint firstAttribute="bottom" secondItem="ji3-7e-sMN" secondAttribute="bottom" constant="3" id="mBI-Qq-cES"/>
                                                 <constraint firstItem="ji3-7e-sMN" firstAttribute="leading" secondItem="NNr-Su-5ct" secondAttribute="leading" id="tco-dn-MZY"/>
                                             </constraints>
                                         </tableViewCellContentView>
